@@ -2,8 +2,8 @@
   "name": "input-with-tag",
   "version": "1.0.0",
   "description": "Based on AntD Input, enhanced it with Tag，support for Form embedded.",
-  "main": "dist/index.js",
   "module": "es/index.js",  
+  "typings": "es/index.d.ts",
   "type": "module",
   "scripts": {
     "build": "rollup -c"
@@ -11,7 +11,7 @@
   "keywords": ["AntD", "Input", " Tag", "Form"],
   "author": "matrixyf",
   "license": "MIT",
-  "files": ["dist"],
+  "files": ["es"],
   "dependencies": {},
   "devDependencies": {
     "@rollup/plugin-commonjs": "^24.0.1",
