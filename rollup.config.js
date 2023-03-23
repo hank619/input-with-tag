@@ -12,14 +12,14 @@ import cssnano from 'cssnano';
 import strip from "@rollup/plugin-strip";
 
 export default {
-  input: 'src/main.ts',
-  output: {
-    dir: 'dist',
+  input: 'src/index.tsx',
+  output: [{
+    dir: 'es',
     format: 'es',
     exports: 'named',
     preserveModules: true,
     preserveModulesRoot: 'src',
-  },
+  }],
   plugins: [
     resolve(),
     commonjs(),
@@ -27,11 +27,10 @@ export default {
       devDeps: false,
     }),
     postcss({
-      extract: 'index.css',
       plugins: [cssnano()],
     }),
     typescript({
-      outDir: "dist",
+      outDir: "es",
       declaration: true,
     }),
     strip(),
