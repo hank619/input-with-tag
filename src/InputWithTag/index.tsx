@@ -5,6 +5,9 @@
  */
 import React, { useState, useRef } from 'react';
 import { message, Input, Tag } from 'antd';
+import 'antd/es/message/style';
+import 'antd/es/input/style';
+import 'antd/es/tag/style';
 import './index.css';
 
 interface IInputWithTagProps {
