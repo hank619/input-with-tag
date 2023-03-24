@@ -22,7 +22,7 @@ import InputWithTag from 'input-with-tag';
 ```
 
 ## Example
-https://stackblitz.com/edit/react-ts-f3dgtx
+https://codesandbox.io/s/admiring-tdd-dcxjmv
 
 ## Contributing
 
