@@ -1,6 +1,6 @@
 {
   "name": "input-with-tag",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Based on AntD Input, enhanced it with Tag，support for Form embedded.",
   "module": "es/index.js",  
   "typings": "es/index.d.ts",
