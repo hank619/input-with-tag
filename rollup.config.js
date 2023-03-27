@@ -3,15 +3,15 @@
  * @Date: 2023-03-23 11:01:06
  * @Description: 
  */
-import postcss from 'rollup-plugin-postcss'
-import resolve from '@rollup/plugin-node-resolve';
-import commonjs from '@rollup/plugin-commonjs';
-import external from 'rollup-plugin-node-externals';
-import typescript from "@rollup/plugin-typescript";
-import cssnano from 'cssnano';
-import strip from "@rollup/plugin-strip";
+const postcss = require('rollup-plugin-postcss');
+const resolve = require('@rollup/plugin-node-resolve');
+const commonjs = require('@rollup/plugin-commonjs');
+const external = require('rollup-plugin-node-externals');
+const typescript = require("@rollup/plugin-typescript");
+const cssnano = require('cssnano');
+const strip = require("@rollup/plugin-strip");
 
-export default {
+module.exports = {
   input: 'src/index.tsx',
   output: [{
     dir: 'es',
